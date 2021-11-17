@@ -1,0 +1,20 @@
+<h2>{{place.name}}</h2>
+<div>
+	<p>This place is a {{place.type}}</p>
+	{{#if isCoffee}}
+	<p>You can drink some caffeine here!</p>
+	{{else}}
+	<p>You can buy/steal some books here!</p>
+	{{/if}}
+</div>
+<div>
+	<form action="/places/{{place.id}}/edit" method="get">
+			<input type="submit" value="Edit">
+	</form>
+	<form action="/places/{{place.id}}/delete" method="post">
+		<input type="submit" value="Delete">
+	</form>
+</div>
+<div id="map"></div>
+<div class="hidden" id="map-id">{{place.id}}</div>
+<script src="/js/one-map.js"></script>

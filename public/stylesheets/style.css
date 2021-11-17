@@ -1,3 +1,7 @@
+*{
+	box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -9,4 +13,29 @@ a {
 
 h1 {
   color: 15px;
+}
+
+#map {
+        width: 100%;
+        height: 400px;
+}
+
+.hidden{
+	  display: none;
+}
+
+.all-places{
+	border: 2px solid black;
+	background-color: #f1faee;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.all-places a{
+	color: #457b9d;
+}
+
+.main-section h2{
+	text-align: center;
 }

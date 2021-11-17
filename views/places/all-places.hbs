@@ -1,0 +1,15 @@
+<h2>Every shithole</h2>
+<div class="all-places">
+	{{#each places}}
+	
+		<div class="place">
+			<a href="/places/{{id}}">
+				<h3>{{name}}</h3>
+			</a>
+			<p>{{type}}</p>
+		</div>
+
+	{{/each}}
+</div>
+<div id="map"></div>
+<script src="/js/main-map.js"></script>
